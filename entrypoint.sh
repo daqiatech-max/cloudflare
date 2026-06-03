@@ -24,7 +24,7 @@ cat > /etc/xray/config.json <<EOF
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/daqiatech2"
+          "path": "/daqiatech2render"
         }
       }
     }
