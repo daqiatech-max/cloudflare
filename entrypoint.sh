@@ -4,7 +4,7 @@ set -e
 [ -z "$CF_TOKEN" ] && echo "ERROR: CF_TOKEN not set" && exit 1
 
 echo "[*] starting dummy http server on :1986..."
-python3 -m http.server 1986 &
+python3 -m http.server 8388 &
 
 echo "[*] starting cloudflared..."
 exec cloudflared tunnel --no-autoupdate \
