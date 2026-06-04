@@ -15,8 +15,7 @@ RUN apt-get update && apt-get install -y \
  && chmod +x /usr/local/bin/xray \
  && rm -rf /tmp/xray.zip /var/lib/apt/lists/*
 
-ENV CF_TOKEN=""
-ENV UUID=""
+
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
